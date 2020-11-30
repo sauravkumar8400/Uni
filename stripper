@@ -1,0 +1,10 @@
+import re
+
+list = ["Python's","interpreted","in1991","whitespace.","1991","dsdf#s@"]
+newlist = []
+for i in list:
+    b = re.sub(r'\W+', '', i).lower().strip("1234567890")
+    print(b)
+    newlist.append(b)
+
+print(newlist)
